@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Random Color Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="card">
+      <h1>Random Color Generator</h1>
+      <p class="subtitle">Click the button and create a beautiful color</p>
+
+      <div id="colorBox" class="color-box"></div>
+
+      <div class="code-area">
+        <span id="colorCode">#FFFFFF</span>
+        <button class="copy-btn" onclick="copyColor()">Copy</button>
+      </div>
+
+      <button class="generate-btn" onclick="generateColor()">
+        Generate Color
+      </button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
