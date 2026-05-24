@@ -15,8 +15,13 @@ function generateColor() {
 
 function copyColor() {
   let colorCode = document.getElementById("colorCode").innerText;
+  let copyBtn = document.querySelector(".copy-btn");
 
   navigator.clipboard.writeText(colorCode);
 
-  alert("Color copied: " + colorCode);
+  copyBtn.innerText = "Copied!";
+
+  setTimeout(function () {
+    copyBtn.innerText = "Copy";
+  }, 1500);
 }
